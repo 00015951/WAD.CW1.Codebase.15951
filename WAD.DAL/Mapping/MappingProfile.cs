@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AutoMapper;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,19 @@ using WAD.DAL.Models;
 
 namespace WAD.DAL.Mapping
 {
-    public MappingProfile()
+    public class MappingProfile : Profile
     {
-        // User Mappings
-        CreateMap<User, UserDTO>();
-        CreateMap<CreateUserDTO, User>();
-        CreateMap<EditUserDTO, User>();
+        public MappingProfile()
+        {
+            // User Mappings
+            CreateMap<User, UserDTO>();
+            CreateMap<CreateUserDTO, User>();
+            CreateMap<EditUserDTO, User>();
 
-        // Activity Mappings
-        CreateMap<Activity, ActivityDTO>();
-        CreateMap<CreateActivityDTO, Activity>();
-        CreateMap<EditActivityDTO, Activity>();
+            // Activity Mappings
+            CreateMap<Activity, ActivityDTO>();
+            CreateMap<CreateActivityDTO, Activity>();
+            CreateMap<EditActivityDTO, Activity>();
+        }
     }
 }
