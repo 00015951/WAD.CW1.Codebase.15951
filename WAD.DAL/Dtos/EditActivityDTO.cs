@@ -8,8 +8,8 @@ namespace WAD.DAL.Dtos
 {
     public class EditActivityDTO
     {
-        public string ActivityName { get; set; }
-        public DateTime ActivityDate { get; set; }
+        public string Type { get; set; }
+        public DateTime Date { get; set; }
         public double Duration { get; set; } 
         public double CaloriesBurned { get; set; } 
     }

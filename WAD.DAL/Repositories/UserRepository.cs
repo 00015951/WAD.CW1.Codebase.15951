@@ -23,7 +23,7 @@ namespace WAD.DAL.Repositories
             {
                 FullName = createUserDTO.FullName,
                 Email = createUserDTO.Email,
-                PasswordHash = EncodePasswordToBase64(createUserDTO.Password),
+                PasswordHash = EncodePasswordToBase64(createUserDTO.PasswordHash),
                 DateOfBirth = createUserDTO.DateOfBirth,
                 Weight = createUserDTO.Weight,
                 Height = createUserDTO.Height

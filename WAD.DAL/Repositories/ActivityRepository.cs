@@ -29,8 +29,8 @@ namespace WAD.DAL.Repositories
             // Create and add activity
             var activity = new Activity
             {
-                Type = createActivityDTO.ActivityName,
-                Date = createActivityDTO.ActivityDate,
+                Type = createActivityDTO.Type,
+                Date = createActivityDTO.Date,
                 Duration = createActivityDTO.Duration,
                 CaloriesBurned = createActivityDTO.CaloriesBurned,
                 UserId = createActivityDTO.UserId
