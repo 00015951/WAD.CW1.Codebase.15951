@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAD.CW1.Codebase.15951", "WAD.CW1.Codebase.15951\WAD.CW1.Codebase.15951.csproj", "{C3239000-7F23-4A5B-B734-F0DAB7AE536F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WAD.DAL", "WAD.DAL\WAD.DAL.csproj", "{8F037372-3A59-468D-97CC-C044AA666176}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3239000-7F23-4A5B-B734-F0DAB7AE536F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3239000-7F23-4A5B-B734-F0DAB7AE536F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3239000-7F23-4A5B-B734-F0DAB7AE536F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3239000-7F23-4A5B-B734-F0DAB7AE536F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F037372-3A59-468D-97CC-C044AA666176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F037372-3A59-468D-97CC-C044AA666176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F037372-3A59-468D-97CC-C044AA666176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F037372-3A59-468D-97CC-C044AA666176}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A714610-1585-4142-A462-C509569F50CF}
+	EndGlobalSection
+EndGlobal
