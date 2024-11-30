@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WAD.DAL.Models
 {
-    internal class User
+    public class User
     {
         public int Id { get; set; }
         public string FullName { get; set; }

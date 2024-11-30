@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using WAD.DAL.Data;
+using WAD.DAL.Interfaces;
+using WAD.DAL.Repositories;
 
 namespace WAD.DAL
 {
@@ -13,6 +15,11 @@ namespace WAD.DAL
 
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IActivityRepository, ActivityRepository>();
+
 
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

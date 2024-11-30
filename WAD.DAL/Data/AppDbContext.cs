@@ -8,7 +8,7 @@ using WAD.DAL.Models;
 
 namespace WAD.DAL.Data
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
         public DbSet<Activity> Activities { get; set; }

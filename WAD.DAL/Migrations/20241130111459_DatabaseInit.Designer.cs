@@ -12,7 +12,7 @@ using WAD.DAL.Data;
 namespace WAD.DAL.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241130104955_DatabaseInit")]
+    [Migration("20241130111459_DatabaseInit")]
     partial class DatabaseInit
     {
         /// <inheritdoc />
@@ -33,14 +33,17 @@ namespace WAD.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<double>("CaloriesBurned")
+                        .HasColumnType("float");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
                     b.Property<double>("Distance")
                         .HasColumnType("float");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("time");
+                    b.Property<double>("Duration")
+                        .HasColumnType("float");
 
                     b.Property<string>("Type")
                         .IsRequired()
